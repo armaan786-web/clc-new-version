@@ -1,0 +1,35 @@
+{% extends 'BASE/base.html' %}
+{% load static %}
+{% block content %}
+
+  <h1 class="text-center mt-5"><span style="border-bottom: 3px solid"> GALLERY </span></h1>
+
+
+{% comment %} gallery part start {% endcomment %}
+<div class="container my-3">
+    <div class="row g-2">
+        <div class="col-md-4 col-6 mb-2 gallery_img_height">
+            <img src="{% static 'clcup_img/p1.png' %}" class="img-fluid w-100 h-100" alt="..." >
+        </div>
+        <div class="col-md-4 col-6 mb-2 gallery_img_height">
+            <img src="{% static 'clcup_img/p2.png' %}" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-md-4 col-6 mb-2 gallery_img_height">
+            <img src="{% static 'clcup_img/p3.png' %}" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-md-4 col-6 mb-2 gallery_img_height">
+            <img src="{% static 'assets/img/gallery/pic1.jpeg' %}" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-md-4 col-6 mb-2 gallery_img_height">
+            <img src="{% static 'assets/img/gallery/pic2.jpeg' %}" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-md-4 col-6 mb-2 gallery_img_height">
+            <img src="{% static 'assets/img/gallery/pic3.jpeg' %}" class="img-fluid w-100 h-100" alt="...">
+        </div>
+        <div class="col-md-4 col-6 mb-2 gallery_img_height">
+            <img src="{% static 'assets/img/gallery/pic4.jpeg' %}" class="img-fluid w-100 h-100" alt="...">
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
